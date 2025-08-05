@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Portfolio.Services;
 
 namespace Portfolio
 {
@@ -12,6 +13,7 @@ namespace Portfolio
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddScoped<IBookService, BookService>();
 
             await builder.Build().RunAsync();
         }
