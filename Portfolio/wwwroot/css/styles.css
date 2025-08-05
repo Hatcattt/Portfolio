@@ -1,6 +1,7 @@
 ﻿:root {
     --text-color: #1a1c20;
     --link-color: #4a76ee;
+    --job-title-color: #808080;
     --background-color: #eeeff1;
 }
 
@@ -37,6 +38,7 @@ nav {
 }
 
 nav .left a {
+    white-space: nowrap;
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
@@ -111,10 +113,55 @@ nav .right a span {
 .xp-section {
     padding: 0 50px;
     margin-bottom: 100px;
+    max-width: 75em;
 }
 
 .xp-section h2 {
     font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.xp-section .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.xp-section .work .job-info {
+    width: 650px;
+}
+
+.xp-section .work .job-info h3 {
+    white-space: nowrap;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--job-title-color);
+}
+
+.xp-section .work .job-info h4 {
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+.xp-section .work .job-info a {
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+.xp-section .work .job-info .info {
+    margin-left: 15px;
+    color: var(--text-color);
+    line-height:200%;
+}
+
+.xp-section .work .job-date {
+    white-space: nowrap;
+    font-size: 15px;
+    justify-content: right;
+    margin-top: 15px;
+    color: var(--link-color);
 }
 
 /* SECTION 3 : Skills */
@@ -197,6 +244,30 @@ nav .right a span {
     .xp-section {
         padding: 0 25px;
     }
+
+    .xp-section h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .xp-section .work .job-info h3 {
+        font-size: 20px;
+    }
+
+    
+    .xp-section .work .job-info h4 {
+        font-size: 18px;
+    }
+
+    .xp-section .work .job-info .info {
+        line-height: 160%;
+        font-size: 15px;
+    }
+
+    .xp-section .work .job-date {
+        font-size: 13px;
+    }
+
 
     /* SECTION 3 : Skills */
     .skills-section {
