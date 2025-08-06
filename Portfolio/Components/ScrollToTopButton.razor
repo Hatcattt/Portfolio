@@ -1,0 +1,20 @@
+﻿@inject IJSRuntime JSRuntime
+
+<button @onclick="ScrollToTop" id="scrollTopBtn" class="btn btn-primary rounded-circle" title="Go to top page">
+    <i class="fa-solid fa-angles-up"></i>
+</button>
+
+@code {
+    private async Task ScrollToTop()
+    {
+        await JSRuntime.InvokeVoidAsync("scrollToTop");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initScrollTopButton");
+        }
+    }
+}

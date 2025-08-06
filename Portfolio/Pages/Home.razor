@@ -1,11 +1,8 @@
 ﻿@page "/"
-@inject IJSRuntime JSRuntime
 
 <PageTitle>Hatcattt's Portfolio</PageTitle>
 
-<button @onclick="ScrollToTop" id="scrollTopBtn" class="btn btn-primary rounded-circle" title="Go to top page">
-    <i class="fa-solid fa-angles-up"></i>
-</button>
+<ScrollToTopButton />
 
 @* Bio Section *@
 <section class="bio-section">
@@ -172,18 +169,3 @@
 <section id="interests">
     <h2>Interests</h2>
 </section>
-
-@code {
-    private async Task ScrollToTop()
-    {
-        await JSRuntime.InvokeVoidAsync("scrollToTop");
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeVoidAsync("initScrollTopButton");
-        }
-    }
-}

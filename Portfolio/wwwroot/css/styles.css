@@ -30,7 +30,7 @@ a {
 #scrollTopBtn {
     width: 50px;
     height: 50px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     border: 2px solid var(--link-color);
     position: fixed;
@@ -38,11 +38,6 @@ a {
     right: 20px;
     display: none;
     z-index: 1000;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
 }
 
 /* NAVBAR */
