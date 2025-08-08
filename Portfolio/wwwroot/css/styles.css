@@ -51,7 +51,6 @@ nav {
 }
 
 nav .left a {
-    white-space: nowrap;
     color: var(--text-color);
     font-size: 25px;
     font-weight: 600;
@@ -138,15 +137,18 @@ nav .right a span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .xp-section .work .job-info {
     width: 650px;
 }
 
+.xp-section .work .job-info .info ul {
+    padding: 0;
+}
+
 .xp-section .work .job-info h3 {
-    white-space: nowrap;
     margin-bottom: 10px;
     font-size: 25px;
     color: var(--job-title-color);
@@ -169,18 +171,20 @@ nav .right a span {
     line-height:200%;
 }
 
-.xp-section .work .job-date {
+.xp-section .work .date {
     white-space: nowrap;
     font-size: 15px;
     justify-content: right;
-    margin-top: 15px;
     color: var(--link-color);
 }
 
 /* SECTION 3 : Skills */
 .skills-section {
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin: 0 auto 100px auto;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .skills-section h2 {
@@ -203,9 +207,9 @@ nav .right a span {
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 200px;
-    margin: 10px;
+    gap: 5px;
+    width: 180px;
+    margin: 5px;
     padding: 10px 20px;
     border: 1.5px solid #d3d3d3;
     border-radius: 10px;
@@ -220,6 +224,90 @@ nav .right a span {
 
 .skills-section .cells .cell span {
     font-size: 20px;
+}
+
+/* SECTION 4 : Education */
+
+.education-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.education-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.education-section .schools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-section .schools .school {
+    
+}
+
+/* SECTION 5 : Projects */
+
+.project-section {
+    padding: 0 50px;
+    margin: 0 auto 100px auto;
+    box-sizing: border-box;
+}
+
+.project-section h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.project-section .text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-section .projects .title {
+    width: 150px;
+    font-weight: bold;
+}
+
+.project-section .projects .flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.project-section .flags .flag {
+    background-color: var(--link-color);
+    color: white;
+    text-align: center;
+    padding: 2px 10px;
+    font-size: 12px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.project-section .infos {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 20px;
+}
+
+.project-section .infos img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px grey;
+}
+
+.project-section .info-right .github-link {
+    padding-top: 20px;
+}
+
+@media (max-width:900px) {
+    .project-section .infos {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width:750px) {
@@ -277,18 +365,47 @@ nav .right a span {
         font-size: 15px;
     }
 
-    .xp-section .work .job-date {
+    .xp-section .work .date {
         font-size: 13px;
     }
-
-
+    
     /* SECTION 3 : Skills */
     .skills-section {
         padding: 0 25px;
     }
 
+    .skills-section .cells .cell {
+        width: 140px;
+    }
+
     .skills-section .cells .cell span {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .skills-section .cells .cell img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* SECTION 4 : Education */
+    .education-section {
+        padding: 0 25px;
+    }
+
+    /* SECTION 5 : Projects */
+    .project-section {
+        padding: 25px;
+    }
+
+    .project-section .infos {
+        justify-content: center;
+    }
+
+    .project-section .info-right {
+        font-size: 15px;
+    }
+}
+
 @media (max-width:400px) {
     /* NAVBAR */
 
