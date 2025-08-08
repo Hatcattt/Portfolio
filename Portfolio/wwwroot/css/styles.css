@@ -53,13 +53,13 @@ nav {
 nav .left a {
     white-space: nowrap;
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 nav .right a {
     color: var(--text-color);
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 nav .right a:last-child {
@@ -229,13 +229,13 @@ nav .right a span {
     }
 
     nav .right a:last-child {
-    color: var(--text-color);
-    background-color: transparent;
-    padding: 0;
-}
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
 
     nav .right a {
-        font-size:25px;
+        font-size:22px;
         margin: 0 5px;
     }
 
@@ -289,5 +289,10 @@ nav .right a span {
 
     .skills-section .cells .cell span {
         font-size: 16px;
+@media (max-width:400px) {
+    /* NAVBAR */
+
+    nav .left a {
+        font-size: 18px;
     }
 }
