@@ -14,6 +14,10 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\css\font-awesome\font-awesome_7.0.0_css_all.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\webfonts\fa-brands-400.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\webfonts\fa-regular-400.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\webfonts\fa-solid-900.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\webfonts\fa-v4compatibility.woff2" />
   </ItemGroup>
 
   <ItemGroup>

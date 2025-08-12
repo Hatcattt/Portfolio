@@ -112,7 +112,7 @@
     <h2>Compétences</h2>
     <div class="text">
         Grâce à mes expériences professionnelles et à mes projets personnels, j’ai développé des compétences solides en langages de programmation et frameworks. 
-        Je souhaite renforcer mon expertise back-end avec ASP.NET Core et Blazor, tout en m’ouvrant au développement multiplateforme (MAUI) et à JavaScript.
+        Je souhaite renforcer mon expertise back-end avec ASP.NET Core et Blazor, tout en m’ouvrant au développement multiplateforme (MAUI).
     </div>
     <div class="cells">
         <div class="cell">
@@ -194,40 +194,46 @@
 @* Projects Section *@
 <section id="projects" class="project-section">
     <h2>Projets personnels</h2>
-    <div class="text">
-        Voici une sélection de projets personnels open source disponibles sur GitHub !
-    </div>
     <div class="projects">
         <div class="accordion" id="accordionExample">
+
+            <!-- Simple Library MAUI -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <span class="title">Pomodoro App</span>
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="false" aria-controls="collapseOne">
+                        <span class="title">Simple Library</span>
                         <div class="flags">
                             <div class="flag">C#</div>
-                            <div class="flag">WPF</div>
+                            <div class="flag">MAUI</div>
+                            <div class="flag">Blazor</div>
                         </div>
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="infos">
-                            <img src="images/projects/capture-pomodoro-app.png" alt="pomodoro app capture"/>
+                            <img src="images/projects/capture-simple-library-maui.png" alt="Capture Simple Library MAUI"/>
                             <div class="info-right">
-                                <p><strong>Pomodoro App</strong> 🍅 est un outil windows de productivité inspiré de la célèbre méthode Pomodoro.</p>
-                                <h5>Features</h5>
+                                <p>
+                                    <strong>Simple Library MAUI</strong> est une réécriture complète de l'application <em>Simple Library WPF</em> (voir plus bas),
+                                    pensée pour être entièrement multiplateforme grâce à .NET MAUI et Blazor Hybrid.  
+                                    <br/>L’objectif est de moderniser l’interface, améliorer l’expérience utilisateur et offrir une compatibilité mobile et desktop.
+                                </p>
+                                <h5>Fonctionnalités prévues</h5>
                                 <ul>
-                                    <li>Minuteur configurable pour le travail et les pauses</li>
-                                    <li>Notifications sonores et visuelles (windows taskbar)</li>
-                                    <li>Implémentation du pattern 
-                                        <a href="https://en.wikipedia.org/wiki/Model-view-viewmodel" target="_blank" rel="noreferrer">MVVM</a>
-                                    </li>
-                                    <li>Interface simple et épurée en XAML</li>
+                                    <li>Ajout et gestion de livres</li>
+                                    <li>Ajout et gestion de bandes dessinées</li>
+                                    <li>Scanner de livres</li>
+                                    <li>Base de données locale avec SQLite</li>
+                                    <li>Interface adaptée aux mobiles et ordinateurs</li>
                                 </ul>
-                                <div class="github-link">Source code : 
-                                    <a href="https://github.com/Hatcattt" target="_blank" rel="noreferrer">
+                                <div class="github-link">
+                                    Code source :
+                                    <a href="https://github.com/Hatcattt/SimpleLibraryMAUI" target="_blank" rel="noreferrer">
                                         <i class="fa-brands fa-github"></i>
-                                        <span>Github</span>
+                                        <span>GitHub (soon)</span>
                                     </a>
                                 </div>
                             </div>
@@ -235,13 +241,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Blue Bear -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
                         <span class="title">Blue Bear</span>
                         <div class="flags">
                             <div class="flag">C#</div>
-                            <div class="flag">Asp.Net</div>
+                            <div class="flag">ASP.NET</div>
                             <div class="flag">React</div>
                         </div>
                     </button>
@@ -249,22 +259,24 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="infos">
-                            <img src="images/projects/capture-pomodoro-app.png" alt="pomodoro app capture"/>
+                            <img src="images/projects/capture-blue-bear.png" alt="Capture Blue Bear"/>
                             <div class="info-right">
-                                <p><strong>Pomodoro App</strong> 🍅 est un outil de productivité inspiré de la célèbre méthode Pomodoro.</p>
-                                <h5>Features</h5>
+                                <p><strong>Blue Bear</strong> est un site e-commerce dédié à la vente de glaces à l’eau personnalisables.<br/>
+                                   Projet en cours de développement (non encore public), réalisé avec mon frère en charge du front-end.
+                                </p>
+                                <h5>Fonctionnalités prévues</h5>
                                 <ul>
-                                    <li>Minuteur configurable pour le travail et les pauses</li>
-                                    <li>Notifications sonores et visuelles (windows taskbar)</li>
-                                    <li>Implémentation du pattern 
-                                        <a href="https://en.wikipedia.org/wiki/Model-view-viewmodel" target="_blank" rel="noreferrer">MVVM</a>
-                                    </li>
-                                    <li>Interface simple et épurée en XAML</li>
+                                    <li>Consulter un catalogue</li>
+                                    <li>Créer une glace personnalisée</li>
+                                    <li>Partager une création</li>
+                                    <li>Création de comptes</li>
+                                    <li>Mettre en favori</li>
                                 </ul>
-                                <div class="github-link">Source code : 
-                                    <a href="https://github.com/Hatcattt" target="_blank" rel="noreferrer">
+                                <div class="github-link">
+                                    Code source :
+                                    <a href="https://github.com/Hatcattt/Bluebear" target="_blank" rel="noreferrer">
                                         <i class="fa-brands fa-github"></i>
-                                        <span>Github</span>
+                                        <span>GitHub (soon)</span>
                                     </a>
                                 </div>
                             </div>
@@ -272,9 +284,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Simple Library -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
                         <span class="title">Simple Library</span>
                         <div class="flags">
                             <div class="flag">C#</div>
@@ -285,22 +301,21 @@
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="infos">
-                            <img src="images/projects/capture-pomodoro-app.png" alt="pomodoro app capture"/>
+                            <img src="images/projects/capture-simple-library-wpf.png" alt="Capture Simple Library"/>
                             <div class="info-right">
-                                <p><strong>Pomodoro App</strong> 🍅 est un outil de productivité inspiré de la célèbre méthode Pomodoro.</p>
-                                <h5>Features</h5>
+                                <p><strong>Simple Library</strong> est une application Windows permettant de gérer une bibliothèque scolaire.</p>
+                                <h5>Fonctionnalités</h5>
                                 <ul>
-                                    <li>Minuteur configurable pour le travail et les pauses</li>
-                                    <li>Notifications sonores et visuelles (windows taskbar)</li>
-                                    <li>Implémentation du pattern 
-                                        <a href="https://en.wikipedia.org/wiki/Model-view-viewmodel" target="_blank" rel="noreferrer">MVVM</a>
-                                    </li>
-                                    <li>Interface simple et épurée en XAML</li>
+                                    <li>Gestion des livres, auteurs, étagères et thèmes (CRUD)</li>
+                                    <li>Création facilitée d’un livre via l’API Google Books</li>
+                                    <li>Fonction de recherche et de tri</li>
+                                    <li>Implémentation du pattern <a href="https://en.wikipedia.org/wiki/Model-view-viewmodel" target="_blank" rel="noreferrer">MVVM</a> (simplifié)</li>
                                 </ul>
-                                <div class="github-link">Source code : 
-                                    <a href="https://github.com/Hatcattt" target="_blank" rel="noreferrer">
+                                <div class="github-link">
+                                    Code source :
+                                    <a href="https://github.com/Hatcattt/SimpleLibrary-WPF" target="_blank" rel="noreferrer">
                                         <i class="fa-brands fa-github"></i>
-                                        <span>Github</span>
+                                        <span>GitHub</span>
                                     </a>
                                 </div>
                             </div>
@@ -308,9 +323,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tic Tac Toe -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
                         <span class="title">Tic Tac Toe</span>
                         <div class="flags">
                             <div class="flag">Java</div>
@@ -321,24 +340,22 @@
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="infos">
-                            <div class="info-left">
-                                <img src="images/projects/capture-tictactoe.png" alt="tic tac toe capture"/>
-                            </div>
+                            <img src="images/projects/capture-tictactoe.png" alt="Capture Tic Tac Toe"/>
                             <div class="info-right">
-                                <p>
-                                    <strong>Tic Tac Toe</strong> est un jeu développé en <strong>Java</strong> 
-                                    avec l'API <strong>Swing</strong>, inspiré du jeu oxo.
+                                <p><strong>Tic Tac Toe</strong> est un jeu développé en <strong>Java</strong> 
+                                   avec l’API <strong>Swing</strong>, inspiré du jeu « Oxo ».
                                 </p>
                                 <h5>Fonctionnalités principales</h5>
                                 <ul>
-                                    <li>🚥 You can choose a difficulty to have a challenge!</li>
-                                    <li>👀 The game status is printed in real time.</li>
-                                    <li>🔄️ There is a reset button to reset the game.</li>
+                                    <li>Choix du niveau de difficulté pour plus de challenge</li>
+                                    <li>Affichage en temps réel de l’état de la partie</li>
+                                    <li>Bouton de réinitialisation pour recommencer</li>
                                 </ul>
-                                <div class="github-link">Source code : 
+                                <div class="github-link">
+                                    Code source :
                                     <a href="https://github.com/Hatcattt/TicTacToe" target="_blank" rel="noreferrer">
                                         <i class="fa-brands fa-github"></i>
-                                        <span>Github</span>
+                                        <span>GitHub</span>
                                     </a>
                                 </div>
                             </div>
@@ -346,6 +363,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
