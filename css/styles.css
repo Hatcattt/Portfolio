@@ -1,0 +1,441 @@
+﻿:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --job-title-color: #808080;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#scrollTopBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid var(--link-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 5px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* SECTION 1 : Bio */
+
+.bio-section {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-bottom: 35px;
+    gap:45px;
+}
+
+.bio-section .text {
+    flex: 5;
+}
+
+.bio-section .text h2{
+    font-size: 40px;
+}
+
+.bio-section .text .links {
+    margin-top: 25px;
+}
+
+.bio-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.bio-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.bio-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.bio-section .headshot img {
+    border-radius: 50%;
+}
+
+/* SECTION 2 : Xp */
+.xp-section {
+    padding: 0 50px;
+    margin-bottom: 50px;
+    max-width: 75em;
+}
+
+.xp-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.xp-section .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.xp-section .work .job-info {
+    width: 650px;
+}
+
+.xp-section .work .job-info .info ul {
+    padding: 0;
+}
+
+.xp-section .work .job-info h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--job-title-color);
+}
+
+.xp-section .work .job-info h4 {
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+.xp-section .work .job-info a {
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+.xp-section .work .job-info .info {
+    margin-left: 15px;
+    color: var(--text-color);
+    line-height:200%;
+}
+
+.xp-section .work .date {
+    white-space: nowrap;
+    font-size: 15px;
+    justify-content: right;
+    color: var(--link-color);
+}
+
+/* SECTION 3 : Skills */
+.skills-section {
+    padding: 0 50px;
+    margin: 0 auto 80px auto;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skills-section h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.skills-section .cells {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 180px;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.skills-section .cells .cell img {
+    width: 50px;
+    height: 50px;
+    object-fit:contain;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 20px;
+}
+
+/* SECTION 4 : Education */
+
+.education-section {
+    padding: 0 50px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.education-section h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.education-section .schools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education-section .schools .card {
+    width: 25rem !important;
+}
+
+.education-section .schools .card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px !important;
+    height: 100%; /* utile si toutes les cartes doivent avoir la même hauteur */
+}
+
+.education-section .schools .card .school-date {
+    color: var(--link-color);
+}
+
+.education-section .schools .card .school-link {
+    margin-top: auto; /* pousse le lien en bas */
+    text-align: center;
+    text-decoration: underline;
+    color: var(--link-color);
+    font-size: 13px;
+}
+/* SECTION 5 : Projects */
+
+.project-section {
+    padding: 0 50px;
+    margin: 0 auto 50px auto;
+    box-sizing: border-box;
+}
+
+.project-section h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.project-section .text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-section .projects .title {
+    width: 150px;
+    font-weight: bold;
+}
+
+.project-section .projects .flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.project-section .flags .flag {
+    background-color: var(--link-color);
+    color: white;
+    text-align: center;
+    padding: 2px 10px;
+    font-size: 12px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.project-section .infos {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 20px;
+}
+
+.project-section .infos img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px grey;
+}
+
+.project-section .info-right .github-link {
+    padding-top: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    color: var(--link-color);
+}
+
+@media (max-width:900px) {
+    .project-section .infos {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:750px) {
+    /* NAVBAR */
+    nav {
+        padding: 0 25px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a {
+        font-size:22px;
+        margin: 0 5px;
+    }
+
+    nav .right a span {
+        display:none;
+    }
+
+    /* SECTION 1 : Bio */
+    .bio-section {
+        flex-direction: column-reverse;
+        padding: 0 25px;
+    }
+
+    .bio-section .text h2 {
+        font-size: 30px;
+    }
+
+    /* SECTION 2 : Xp */
+    .xp-section {
+        padding: 0 25px;
+    }
+
+    .xp-section h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .xp-section .work .job-info h3 {
+        font-size: 20px;
+    }
+    
+    .xp-section .work .job-info h4 {
+        font-size: 18px;
+    }
+
+    .xp-section .work .job-info .info {
+        line-height: 160%;
+        font-size: 15px;
+    }
+
+    .xp-section .work .date {
+        font-size: 13px;
+    }
+    
+    /* SECTION 3 : Skills */
+    .skills-section {
+        padding: 0 25px;
+    }
+
+    .skills-section .cells .cell {
+        width: 140px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 15px;
+    }
+
+    .skills-section .cells .cell img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* SECTION 4 : Education */
+    .education-section {
+        padding: 0 25px;
+    }
+
+    /* SECTION 5 : Projects */
+    .project-section {
+        padding: 0 25px;
+    }
+
+    .project-section .infos {
+        justify-content: center;
+    }
+
+    .project-section .info-right {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:400px) {
+    /* NAVBAR */
+
+    nav .left a {
+        font-size: 18px;
+    }
+}
