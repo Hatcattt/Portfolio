@@ -12,4 +12,13 @@
     <PackageReference Include="System.Text.Json" Version="8.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\font-awesome\font-awesome_7.0.0_css_all.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\fontawesome\" />
+    <Folder Include="wwwroot\js\fontawesome\" />
+  </ItemGroup>
+
 </Project>

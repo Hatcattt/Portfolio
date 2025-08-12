@@ -79,9 +79,8 @@ nav .right a span {
     justify-content:space-between;
     align-items: center;
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-bottom: 35px;
     gap:45px;
-    margin: 50px 0;
 }
 
 .bio-section .text {
@@ -111,20 +110,20 @@ nav .right a span {
     border: 2px solid var(--text-color);
 }
 
-.bio-section .headshoot {
+.bio-section .headshot {
     flex: 2;
     display: flex;
     justify-content: right;
 }
 
-.bio-section .headshoot img {
+.bio-section .headshot img {
     border-radius: 50%;
 }
 
 /* SECTION 2 : Xp */
 .xp-section {
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     max-width: 75em;
 }
 
@@ -181,7 +180,7 @@ nav .right a span {
 /* SECTION 3 : Skills */
 .skills-section {
     padding: 0 50px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 80px auto;
     max-width: 1000px;
     width: 100%;
     box-sizing: border-box;
@@ -230,29 +229,50 @@ nav .right a span {
 
 .education-section {
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    justify-content: center;
 }
 
 .education-section h2 {
     font-size: 35px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .education-section .schools {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
-.education-section .schools .school {
-    
+.education-section .schools .card {
+    width: 25rem !important;
 }
 
+.education-section .schools .card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px !important;
+    height: 100%; /* utile si toutes les cartes doivent avoir la même hauteur */
+}
+
+.education-section .schools .card .school-date {
+    color: var(--link-color);
+}
+
+.education-section .schools .card .school-link {
+    margin-top: auto; /* pousse le lien en bas */
+    text-align: center;
+    text-decoration: underline;
+    color: var(--link-color);
+    font-size: 13px;
+}
 /* SECTION 5 : Projects */
 
 .project-section {
     padding: 0 50px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
     box-sizing: border-box;
 }
 
@@ -302,6 +322,13 @@ nav .right a span {
 
 .project-section .info-right .github-link {
     padding-top: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    color: var(--link-color);
 }
 
 @media (max-width:900px) {
@@ -354,7 +381,6 @@ nav .right a span {
     .xp-section .work .job-info h3 {
         font-size: 20px;
     }
-
     
     .xp-section .work .job-info h4 {
         font-size: 18px;
@@ -394,7 +420,7 @@ nav .right a span {
 
     /* SECTION 5 : Projects */
     .project-section {
-        padding: 25px;
+        padding: 0 25px;
     }
 
     .project-section .infos {
