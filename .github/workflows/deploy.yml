@@ -24,7 +24,7 @@ jobs:
 
       # 4. Réécriture automatique du <base href> dans index.html
       - name: Rewrite base href
-        uses: SteveSandersonMS/ghaction-rewrite-base-href@5b54862
+        uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
         with:
           html_path: Release/wwwroot/index.html
           base_href: /Portfolio/
