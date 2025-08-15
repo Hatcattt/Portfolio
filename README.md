@@ -33,8 +33,3 @@ The portfolio is developed using the following technologies:
 - **Bootstrap** – For responsive layout and UI components.
 - **C#** – Core programming language for application logic.
 - **Visual Studio 2022** – IDE used for development and debugging.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).  
-You are free to use, modify, and distribute the code in accordance with the license terms.
