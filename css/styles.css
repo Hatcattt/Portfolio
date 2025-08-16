@@ -47,12 +47,13 @@ nav {
     justify-content:space-between;
     align-items: center;
     padding: 0 50px;
+    margin-bottom: 20px;
     height: 80px;
 }
 
 nav .left a {
     color: var(--text-color);
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -70,6 +71,12 @@ nav .right a:last-child {
 
 nav .right a span {
     margin-left: 5px;
+}
+
+.grey-subtitle {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--job-title-color);
 }
 
 /* SECTION 1 : Bio */
@@ -147,12 +154,6 @@ nav .right a span {
     padding: 0;
 }
 
-.xp-section .work .job-info h3 {
-    margin-bottom: 10px;
-    font-size: 25px;
-    color: var(--job-title-color);
-}
-
 .xp-section .work .job-info h4 {
     font-size: 20px;
     margin-bottom:10px;
@@ -180,49 +181,15 @@ nav .right a span {
 /* SECTION 3 : Skills */
 .skills-section {
     padding: 0 50px;
-    margin: 0 auto 80px auto;
-    max-width: 1000px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .skills-section h2 {
     font-size: 35px;
-    text-align: center;
 }
 
 .skills-section .text {
-    text-align: center;
     margin-bottom: 25px;
-}
-
-.skills-section .cells {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.skills-section .cells .cell {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 180px;
-    margin: 5px;
-    padding: 10px 20px;
-    border: 1.5px solid #d3d3d3;
-    border-radius: 10px;
-}
-
-.skills-section .cells .cell img {
-    width: 50px;
-    height: 50px;
-    object-fit:contain;
-    border-radius: 5px;
-}
-
-.skills-section .cells .cell span {
-    font-size: 20px;
 }
 
 /* SECTION 4 : Education */
@@ -242,7 +209,7 @@ nav .right a span {
 .education-section .schools {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -250,19 +217,61 @@ nav .right a span {
     width: 25rem !important;
 }
 
+.education-section .schools .card:hover {
+    box-shadow: 5px 0 5px #00000040;
+}
+
+.education-section .card-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.education-section .card-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(13, 47, 77, 0.4) 50%,
+            rgba(13, 47, 80, 0.8) 80%,
+            rgba(7, 28, 46, 1) 100%
+    );
+    pointer-events: none;
+}
+
+.education-section .card-image-title {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    margin: 0;
+}
+
 .education-section .schools .card .card-body {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px !important;
-    height: 100%; /* utile si toutes les cartes doivent avoir la même hauteur */
 }
 
 .education-section .schools .card .school-date {
     color: var(--link-color);
 }
 
+.education-section .schools .card .card-text {
+    font-size: 14px;
+}
+
 .education-section .schools .card .school-link {
-    margin-top: auto; /* pousse le lien en bas */
+    margin-top: auto;
     text-align: center;
     text-decoration: underline;
     color: var(--link-color);
@@ -327,6 +336,7 @@ nav .right a span {
 /* FOOTER */
 
 .footer {
+    margin-bottom: 80px;
     text-align: center;
     color: var(--link-color);
 }
@@ -334,6 +344,11 @@ nav .right a span {
 @media (max-width:900px) {
     .project-section .infos {
         flex-wrap: wrap;
+    }
+    
+    /* NAVBAR */
+    nav .left a {
+        font-size: 25px;
     }
 }
 
@@ -398,6 +413,7 @@ nav .right a span {
     /* SECTION 3 : Skills */
     .skills-section {
         padding: 0 25px;
+        justify-content: center;
     }
 
     .skills-section .cells .cell {
@@ -422,6 +438,14 @@ nav .right a span {
     .project-section {
         padding: 0 25px;
     }
+    
+    .project-section table th {
+        font-size: 15px;
+    }
+
+    .project-section table td {
+        font-size: 13px;
+    }
 
     .project-section .infos {
         justify-content: center;
@@ -436,6 +460,6 @@ nav .right a span {
     /* NAVBAR */
 
     nav .left a {
-        font-size: 18px;
+        font-size: 21px;
     }
 }
