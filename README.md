@@ -18,7 +18,7 @@ The site is powered by Blazor WebAssembly, enabling me to write full-stack C# ap
 ## Features
 
 - **Responsive Design** – Fully optimized for desktop, tablet, and mobile viewing.
-- **Project Showcase** – Highlights my personal and open-source projects, including descriptions, technologies used, and links to GitHub repositories.
+- **Project Showcase** – Highlighting my personal and open source projects retrieved from GitHub API.
 - **Skills Overview** – Displays my technical skills in programming languages and frameworks.
 - **Personal Bio** – A friendly introduction about my background and transition into software development.
 - **Smooth Animations & UI** – Subtle transitions and effects for an enhanced browsing experience.

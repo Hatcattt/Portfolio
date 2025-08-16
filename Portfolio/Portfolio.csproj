@@ -18,6 +18,11 @@
     <_ContentIncludedByDefault Remove="wwwroot\webfonts\fa-regular-400.woff2" />
     <_ContentIncludedByDefault Remove="wwwroot\webfonts\fa-solid-900.woff2" />
     <_ContentIncludedByDefault Remove="wwwroot\webfonts\fa-v4compatibility.woff2" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\projects\capture-blue-bear.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\projects\capture-pomodoro-app.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\projects\capture-simple-library-maui.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\projects\capture-simple-library-wpf.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\projects\capture-tictactoe.png" />
   </ItemGroup>
 
   <ItemGroup>
